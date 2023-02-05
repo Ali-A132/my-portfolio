@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  width: 100%;
+  height: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar {
+    height: 80px;
+    width: 100vw;
+    background-color: #1F1515;
+    color: white;
+    display: flex;
+    flex-direction: row;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.label {
+  font-size: 24px;
+  margin-left: 60px;
+  position: relative;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+}
+
+.label1 {
+  font-size: 24px;
+  margin-left: 45px;
+  position: relative;
+  margin-top: 30px;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+}
+
+.scroll_down {
+  color: white;
+  margin-top:5px;
+  transform: scale(0.7);
+  position: flex;
+  margin-left: auto;
+  margin-right: 20px;
+  
+}
+
+.title_section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  position: relative;
+}
+
+.flip_book {
+  transform: scale(0.6) rotate(-30deg);
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+
+.web_title_box {
+  background-color: #1F1515;
+  margin-top: 100px;
+  width: 50%;
+  height: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.web_title {
+  color: white;
+  font-size: 96px;
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #1F1515;
+  margin-top: 20px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.my_name {
+  margin-top: -40px;
+  font-size: 96px;
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mac_box {
+  margin-top: 100px;
+}
+
+.mac_pic {
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 60%;
+  position: absolute;
+}
+
+.mac_box_title {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  border-radius: 19px;
+  height: 80px;
+  margin-top: 80px;
+  background-color: #323232;
+  width: 20%;
+}
+
+.mac_box_title_text {
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mac_box_text {
+  width: 95%;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+  color: white;
+  font-family: monospace;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mac_box_text_box {
+  background-color: #323232;
+  position: relative;
+  width: 53%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  font-weight: 100;
+}
+
+.tech_and_frameworks_title {
+  font-family: 'Inconsolata', monospace;
+  font-size: 64px;
+  margin-top: 200px;
+  text-align: center;
+  margin-bottom: 100px;
 }
