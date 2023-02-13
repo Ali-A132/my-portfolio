@@ -2,21 +2,33 @@
 
 * {
   box-sizing: border-box;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  scroll-behavior: smooth;
 }
 
 .container{
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
     height: 80px;
-    width: 100vw;
+    width: 100%;
     background-color: #1F1515;
     color: white;
     display: flex;
     flex-direction: row;
+    
+}
+
+.navbar2 {
+  height: 80px;
+  width: 100%;
+  background-color: #1F1515;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  
 }
 
 .label {
@@ -26,6 +38,8 @@
   margin-top: 30px;
   font-weight: bold;
   font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: white;
 }
 
 .label1 {
@@ -35,6 +49,8 @@
   margin-top: 30px;
   font-weight: bold;
   font-family: 'Inconsolata', monospace;
+  text-decoration: none;
+  color: white;
 }
 
 .scroll_down {
@@ -47,6 +63,15 @@
   
 }
 
+.scroll_up {
+  color: white;
+  margin-top:5px;
+  transform: scale(0.7);
+  position: absolute;
+  margin-right: 20px;
+  right: 0;
+}
+
 .title_section {
   display: flex;
   flex-direction: row;
@@ -55,19 +80,27 @@
 
 .flip_book {
   transform: scale(0.6) rotate(-30deg);
-  margin-right: auto;
-  margin-left: auto;
-  position: relative;
+  left: 0;
+  position: absolute;
+  z-index:-1;
+}
+
+
+.flip_book2 {
+  transform: scale(0.6) rotate(-30deg);
+  right: 0;
+  position: absolute;
+  z-index:-1;
 }
 
 .web_title_box {
   background-color: #1F1515;
   margin-top: 100px;
-  width: 50%;
+  width: fit-content;
   height: fit-content;
   margin-right: auto;
   margin-left: auto;
-
+  margin-bottom: 40px;
 }
 
 .web_title {
@@ -77,6 +110,8 @@
   font-family: 'Inconsolata', monospace;
   margin-bottom: 20px;
   font-weight: bold;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 
@@ -99,46 +134,64 @@
 }
 
 .mac_box {
-  margin-top: 100px;
+  background: url("./images/macBlanco.jpg");
+  right: 0;
+  left: 0;
+  max-width:760px;
+  min-height: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+  margin-bottom: 100px;
 }
 
-.mac_pic {
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 60%;
-  position: absolute;
-}
 
 .mac_box_title {
   margin-left: auto;
   margin-right: auto;
-  position: relative;
+  left: 0;
+  right: 0;
   border-radius: 19px;
-  height: 80px;
-  margin-top: 80px;
+  height: 50px;
   background-color: #323232;
-  width: 20%;
+  width: 200px;
+  margin-bottom: 50px;
+  transform: translateY(60px);
 }
 
 .mac_box_title_text {
   margin-left: auto;
   margin-right: auto;
+  right: 0;
+  left: 0;
   font-family: 'Inconsolata', monospace;
   text-align: center;
   font-size: 40px;
   margin-top: 20px;
   color: white;
+  margin-top: 20px;
+}
+
+.mac_box_title_text2 {
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+  left: 0;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 20px;
+  color: white;
+  margin-top: 20px;
 }
 
 .mac_box_text {
-  width: 95%;
-  position: relative;
+  width: 90%;
+  max-width: fit-content;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  font-size: 36px;
+  font-size: 25px;
   color: white;
   font-family: monospace;
   margin-top: 20px;
@@ -148,19 +201,231 @@
 
 .mac_box_text_box {
   background-color: #323232;
-  position: relative;
-  width: 53%;
+  max-width: 650px;
+  left: 0;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
   border-radius: 20px;
-  margin-top: 40px;
   font-weight: 100;
+  margin-top: 110px;
+  margin-bottom: 85px;
 }
 
 .tech_and_frameworks_title {
   font-family: 'Inconsolata', monospace;
   font-size: 64px;
-  margin-top: 200px;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.tech_section {
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0; 
+  right: 0; 
+  text-align: center;
+}
+
+.tech_pic {
+  margin-left: -50px;
+}
+
+.tech_pic_special {
+  margin-left: 50px;
+}
+
+.tech_pic_special2 {
+  margin-left: 60px;
+}
+
+.tech_pic_row {
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.prog_section_title {
+  font-family: 'Inconsolata', monospace;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 50px;
+  position: relative;
+  margin-top: 100px
+}
+
+.project_section_title {
+  font-family: 'Inconsolata', monospace;
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: 150px
+}
+
+.merry_go_round {
+  margin-bottom: 200px;
+}
+
+.mantine-Carousel-root {
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  --mantine-transition-timing-function: ease;
+  max-height: fit-content;
+  margin-top: 50px;
+
+
+}
+
+.project_section_text {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 30px;
+  font-size: 25px;
+  
+}
+
+.copyright {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  margin-bottom: 30px;
+  font-size: 25px;
+  margin-top: 200px;
+}
+
+.avatar {
+  transform: scale(0.8);
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 30px
+}
+
+.hp {
+  font-family:  monospace;
+  font-size:25px;
+  transform: translate(390px, 50px);
+  margin-bottom: 40px;
+  color: white;
+  font-weight: 100;
+}
+
+.hp2 {
+  font-family:  monospace;
+  font-size:25px;
+  transform: translate(390px, 50px);
+  margin-bottom: 40px;
+  color: white;
+  font-weight: 100;
+}
+
+.me_tag {
+  font-family:  monospace;
+  font-size: 30px;
+  margin-left: 170px;
+  margin-top: 20px;
+  color: white;
+  font-weight: 100;
+}
+
+
+.icon_nav {
+  transform: scale(1);
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.icon_nav2 {
+  transform: scale(1);
+  display: inline-block;
+  right: 0;
+  text-align: center;
+  margin-right: auto;
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.icon_nav1 {
+  transform: scale(1);
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 25px;
+}
+
+@media only screen and (max-width: 589px) {
+  div.web_title {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  div.web_title {
+    font-size: 60px;
+  }
+  div.tech_and_frameworks_title {
+    font-size: 40px;
+  }
+}@media only screen and (max-width: 679px) {
+  div.mac_box {
+    transform: scale();
+
+  }
+  div.avatar {
+    transform: scale(0.5);
+    position: relative;
+    margin-top: -40px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  div.hp {
+    font-size: 20px;
+    margin-bottom: 15px;
+    transform: translate(3%,-230%);
+    position: relative;
+    text-align: center;
+    left: 0;
+    right: 0;
+    align-items: center;
+    text-align: center;
+  }
+  div.me_tag {
+    display: none;
+  }
+  div.hp2 {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 737px) {
+  div.web_title {
+    font-size: 60px;
+  }
+  div.tech_and_frameworks_title {
+    font-size: 40px;
+  }
+  div.label {
+    display: none;
+  }
+  div.label1 {
+    display: none;
+  }
+  div.scroll_down {
+    display: none;
+  }
+  div.navbar {
+    display: none;
+  }
+  a.scroll_up {
+    display: none;
+  }
 }
