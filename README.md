@@ -1,6 +1,6 @@
 # MY PORTFOLIO WEBSITE 🖥️
 
-Hello there! This is my personal website which showcases my projects, interests, and passion! ⚡
+Hello there! This is my personal website which showcases my projects, interests, and passions! ⚡
 
 ## Available Scripts
 
