@@ -1,4 +1,4 @@
-# MY PORTFOLIO WEBSITE 🦊
+# My Portfolio Site 🦊
 
 Hello there! This is my personal website which showcases my projects, interests, and passions! ⚡
 
