@@ -22,7 +22,7 @@ import sentitweet_picture from "./images/sentitweet_picture.png";
 import python_script_picture from "./images/python_script_pic.png";
 import lauriercs_picture from "./images/lauriercs_pic.JPG";
 import avatar_picture from "./images/avatar_pic.png";
-import madhouse_picture from "./images/madhouse_pic.JPG";
+import madhouse_picture from "./images/madhouse_blueprint.JPG";
 import github_logo from "./images/github_logo.png";
 import instagram_logo from "./images/instagram_logo.png";
 import linkedin_logo from "./images/linkedin_logo.png";
@@ -187,6 +187,7 @@ function App() {
         <Carousel  
    
             max-height={700}
+            min-height={700}
             slideSize="33.3333333333333%"
             slideGap="md"
             loop dragFree
@@ -248,7 +249,6 @@ function App() {
                   </Card>
               </Carousel.Slide>
 
-              {/* Project 3 */}
               <Carousel.Slide>
                   <Card shadow="sm" p="md" radius="lg" withBorder>
                         <Card.Section>
@@ -280,6 +280,35 @@ function App() {
                   <Card shadow="sm" p="md" radius="lg" withBorder>
                         <Card.Section>
                             <Image 
+                            src={madhouse_picture}
+                            height={160}
+                            alt="Project 3"
+                            />
+                        </Card.Section>
+
+                        <Group positon="apart" mt="md" mb="xs">
+                            <Text weight={500}> MAD-HOUSE </Text>
+                            <Badge variant="gradient" gradient={{ from: 'cyan', to: 'lime' }}> Database Archive </Badge>
+                        </Group>
+
+                        <Text size="sm" color="dimmed">
+                        A website made to compile interviews, concert footage, and unreleased music by my favorite artists. Made with React, Firebase, JavaScript, HTML/CSS, YT Rapid API.
+                        </Text>
+                        <div className="spacer" style={{ width: "100%", height: "4.2em" }} />
+                        <Center>
+                            <Button component="a" href="https://github.com/Ali-A132/MAD-HOUSE" target="_blank" rel="noreferrer" variant="dark" color="btn-color.6" radius="md">
+                                  View Project Code
+                            </Button>
+                        </Center>
+                  </Card>
+              </Carousel.Slide>
+
+              {/* Project 3 */}
+
+              <Carousel.Slide>
+                  <Card shadow="sm" p="md" radius="lg" withBorder>
+                        <Card.Section>
+                            <Image 
                             src={lauriercs_picture}
                             height={150}
                             alt="Project 3"
@@ -303,32 +332,7 @@ function App() {
                   </Card>
               </Carousel.Slide>
 
-              <Carousel.Slide>
-                  <Card shadow="sm" p="md" radius="lg" withBorder>
-                        <Card.Section>
-                            <Image 
-                            src={madhouse_picture}
-                            height={160}
-                            alt="Project 3"
-                            />
-                        </Card.Section>
-
-                        <Group positon="apart" mt="md" mb="xs">
-                            <Text weight={500}> MAD-HOUSE </Text>
-                            <Badge variant="gradient" gradient={{ from: 'cyan', to: 'lime' }}> Database Archive </Badge>
-                        </Group>
-
-                        <Text size="sm" color="dimmed">
-                        A website made to compile interviews, concert footage, and unreleased music by my favorite artists. Made with Angular, JavaScript, TypeScript, SQL, HTML/CSS.
-                        </Text>
-                        <div className="spacer" style={{ width: "100%", height: "4.2em" }} />
-                        <Center>
-                            <Button component="a" href="https://github.com/Ali-A132/MAD-HOUSE-My-Artist-Database" target="_blank" rel="noreferrer" variant="dark" color="btn-color.6" radius="md">
-                                  View Project Code
-                            </Button>
-                        </Center>
-                  </Card>
-              </Carousel.Slide>
+          
               
         </Carousel>
         </div>
@@ -344,7 +348,7 @@ function App() {
         </div>
 
         <div class = "hp">HP: 19 🔋</div>
-        <div class = "hp">Typing Speed: 40wpm ⚡</div>
+        <div class = "hp">Typing Speed: 62wpm ⚡</div>
         <div class = "hp">Eyesight: 20/20 👀</div>
         <div class = "hp">Spec. Atk: Recycling ♻️</div>
         <div class = "hp2">Hobby: Piano 🎹</div>
