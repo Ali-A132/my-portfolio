@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
+::selection {
+  background: rgb(26, 199, 136);
+}
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -195,6 +199,7 @@
   color: white;
   font-family: monospace;
   margin-top: 20px;
+  margin: 20px;
   margin-bottom: 20px;
   font-weight: lighter;
 }
@@ -202,6 +207,7 @@
 .mac_box_text_box {
   background-color: #323232;
   max-width: 650px;
+  height: fit-content;
   left: 0;
   right: 0;
   margin-left: auto;
