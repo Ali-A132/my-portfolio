@@ -1,7 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
 
+/*** Works on common browsers ***/
 ::selection {
   background: rgb(26, 199, 136);
+  color: #fff;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+  background: rgb(26, 199, 136);
+  color: #fff;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+  background: rgb(26, 199, 136);
+  color: #fff;
+}
+
+::-ms-selection {
+  background: rgb(26, 199, 136);
+  color: #fff;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+  background: rgb(26, 199, 136);
+  color: #fff;
 }
 
 * {
@@ -44,6 +69,7 @@
   font-family: 'Inconsolata', monospace;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .label1 {
@@ -55,6 +81,7 @@
   font-family: 'Inconsolata', monospace;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 .scroll_down {
@@ -64,7 +91,7 @@
   position: flex;
   margin-left: auto;
   margin-right: 20px;
-  
+  cursor: pointer;
 }
 
 .scroll_up {
@@ -74,6 +101,7 @@
   position: absolute;
   margin-right: 20px;
   right: 0;
+  cursor: pointer;
 }
 
 .title_section {

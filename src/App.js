@@ -28,12 +28,13 @@ import instagram_logo from "./images/instagram_logo.png";
 import linkedin_logo from "./images/linkedin_logo.png";
 import resume_logo from "./images/resume_logo.png";
 import Typical from 'react-typical'
-import PDF from './images/AliAkbar-PortfolioSiteResume.pdf';
+import PDF from './images/Ali Akbar - Resume 2024.pdf';
 import { useRef } from 'react';
 import { ScrollArea, Stack } from '@mantine/core';
 import { Tooltip, Button, Group } from '@mantine/core';
 import { Center, Badge, Container, Card, Image, Text, Title, Divider } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
+import { Link } from 'react-scroll';
 
 function App() {
   return (
@@ -42,13 +43,13 @@ function App() {
       
       <div class="navbar" id = "top">
       
-        <a class = "label1" href ="#project_section">Projects</a>
-        <a class = "label" href ="#mac_box">About</a>
-        <a class = "label" href ="#mystat">Stats</a>
-        <a class = "label" href ="#bot">Contact</a>
+        <div className = "label1"><Link to="project_section" smooth duration={100}> Projects </Link></div>
+        <div className = "label" ><Link to="mac_box" smooth duration={100}> About </Link></div>
+        <div className = "label" ><Link to="mystat" smooth duration={100}> Stats </Link></div>
+        <div className = "label" ><Link to="bot" smooth duration={100}> Contact </Link></div>
         <a class = "label" href = {PDF} target="blank" rel="next noreferrer">Resumé</a>
 
-        <a class = "scroll_down" href ="#bot"><BsArrowDown size = {70}/></a>
+        <a class = "scroll_down" ><Link to="bot" smooth duration={100}> <BsArrowDown size = {70}/> </Link></a>
 
         
       </div>
@@ -360,10 +361,10 @@ function App() {
 
       <div class = "navbar2">
         <a class = "icon_nav1" href = {PDF} target="blank" rel="next noreferrer"><img src={resume_logo} /></a>
-        <a class = "icon_nav" href="https://github.com/Ali-A132"><img src={github_logo} /></a>
-        <a class = "icon_nav" href="https://www.instagram.com/_not_ali/"><img src={instagram_logo}/></a>
-        <a class = "icon_nav2" href="https://www.linkedin.com/in/ali-akbar132/"><img src={linkedin_logo}/></a>
-        <a class = "scroll_up" href ="#top"><BsArrowUp size = {70}/></a>
+        <a class = "icon_nav" href="https://github.com/Ali-A132" target = "blank"><img src={github_logo} /></a>
+        <a class = "icon_nav" href="https://www.instagram.com/_not_ali/" target = "blank"><img src={instagram_logo}/></a>
+        <a class = "icon_nav2" href="https://www.linkedin.com/in/ali-akbar132/" target = "blank"><img src={linkedin_logo}/></a>
+        <a class = "scroll_up" ><Link to="top" smooth duration={100}> <BsArrowUp size = {70}/> </Link></a>
       </div>
 
       </div>
